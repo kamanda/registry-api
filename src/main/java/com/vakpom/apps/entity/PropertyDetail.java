@@ -1,9 +1,8 @@
 package com.vakpom.apps.entity;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.*;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigInteger;
 import java.time.LocalDate;
 
@@ -13,8 +12,9 @@ import java.time.LocalDate;
 @Entity
 @Table(name= "property_detail")
 public class PropertyDetail  {
-    @org.springframework.data.annotation.Id
-    @Column(name = "Id")
+
+    @javax.persistence.Id
+    @Column(name = "id")
     public String Id;
 
     @Column(name = "description")
