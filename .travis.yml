@@ -1,3 +1,6 @@
 before_install: chmod +x mvnw
 
 language: java
+
+notifications:
+    slack: vakpom:NXG7MAX6iAgD16R5qmsyXONW
